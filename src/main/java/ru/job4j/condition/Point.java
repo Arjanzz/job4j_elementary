@@ -7,7 +7,7 @@ public class Point {
     }
 
     public static void main(String[] args) {
-        double result = Point.distance(0, 0, 0, 0);
+        double result = Point.distance(0, 0, 2, 0);
         double result2 = Point.distance(0, 0, 3, 1);
         double result3 = Point.distance(0, 0, 4, 2);
 
