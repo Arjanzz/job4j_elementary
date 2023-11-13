@@ -19,10 +19,10 @@ public class Converter {
         boolean passedEur = expectedEur == outEur;
         System.out.println("140 rubles are 2. Test result : " + passedEur);
 
-        float inDoll = 140;
-        float expectedDoll = 140 / 60F;
+        float inDoll = 120;
+        float expectedDoll = 2;
         float outDoll = Converter.rubleToDollar(inDoll);
         boolean passedDoll = expectedDoll == outDoll;
-        System.out.println("140 rubles are 2.3333. Test result : " + passedDoll);
+        System.out.println("140 rubles are 2. Test result : " + passedDoll);
     }
 }
