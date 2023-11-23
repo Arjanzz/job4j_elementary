@@ -2,6 +2,7 @@ package ru.job4j.array;
 
 import org.junit.jupiter.api.Test;
 import static org.assertj.core.api.Assertions.assertThat;
+import static org.assertj.core.api.Assertions.in;
 
 public class FindLoopTest {
     @Test
@@ -48,7 +49,12 @@ public class FindLoopTest {
 
     @Test
     public void whenDiapasonHasNot8ThenMinus1() {
-        /* Дописать тест, когда элемент 8 в диапазоне не найден.
-        Можно искать любой другой элемент, корректно отражая этот факт в названии теста. */
+        int[] data = new int[] {4, 3, 5, 9, 3};
+        int el = 8;
+        int start = 1;
+        int finish = 4;
+        int result = FindLoop.indexInRange(data, el, start, finish);
+        int expected = -1;
+        assertThat(result).isEqualTo(expected);
     }
 }
