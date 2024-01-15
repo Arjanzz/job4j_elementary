@@ -6,19 +6,11 @@ public class Max {
     }
 
     public static int max(int left, int right, int top) {
-        if (left > right && left > top) {
-            return left;
-        } else {
-            if (right > left && right > top) {
-                return right;
-            } else {
-                return top;
-            }
-        }
+        return max(max(left, right), top);
     }
 
     public static int max(int left, int right, int top, int bottom) {
-        return Math.max(max(left, right, top), bottom);
+        return max(max(left, right, top), bottom);
     }
 
     public static void main(String[] args) {
