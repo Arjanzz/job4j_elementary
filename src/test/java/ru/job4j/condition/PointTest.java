@@ -40,4 +40,13 @@ class PointTest {
         double out = a.distance(b);
         assertThat(out).isEqualTo(expected, withPrecision(0.01));
     }
+
+    @Test
+    void when123To456Then5dot19() {
+        double expected = 5.19;
+        Point point1 = new Point(1, 2, 3);
+        Point point2 = new Point(4, 5, 6);
+        double out = point1.distance3d(point2);
+        assertThat(out).isEqualTo(expected, withPrecision(0.01));
+    }
 }
